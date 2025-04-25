@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Labor Job Portal</title>
+    <link rel="stylesheet" href="login styles.css">
+</head>
+<body>
+    <header>
+        <h1>Labor Job Portal</h1>
+    </header>
+    <main>
+        <section id="login">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="user-type">Select User Type:</label>
+                <select id="user-type" name="user-type" required>
+                    <option value="" disabled selected>Select your role</option>
+                    <option value="labor">Labor</option>
+                    <option value="contractor">Contractor</option>
+                </select>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Labor Job Portal</p>
+    </footer>
+    <script src="login.js"></script>
+</body>
+</html>

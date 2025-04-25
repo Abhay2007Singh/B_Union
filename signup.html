@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Labor Job Portal</title>
+    <link rel="stylesheet" href="singup styles.css">
+</head>
+<body>
+    <header>
+        <h1>Labor Job Portal</h1>
+    </header>
+    <main>
+        <section id="signup">
+            <h2>Create an Account</h2>
+            <form id="signup-form">
+                <label for="janaadhar">Janaadhar Number:</label>
+                <input type="text" id="janaadhar" name="janaadhar" required>
+
+                <button type="button" id="send-otp">Send OTP</button>
+
+                <label for="otp" id="otp-label" style="display:none;">OTP:</label>
+                <input type="text" id="otp" name="otp" style="display:none;">
+
+                <button type="button" id="verify-otp" style="display:none;">Verify OTP</button>
+
+                <div id="password-section" style="display:none;">
+                    <label for="password">Set Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Sign Up</button>
+                </div>
+            </form>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Labor Job Portal</p>
+    </footer>
+    <script src="signup.js"></script>
+</body>
+</html>
